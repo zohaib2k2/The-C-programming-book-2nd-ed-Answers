@@ -1,0 +1,30 @@
+The following code:
+
+#include <stdio.h
+
+main(){
+    printf ("hello, world\n");
+}
+
+produces the following errors when compliled with gcc
+
+error: missing terminating > character
+   19 | #include <stdio.h
+
+and the code:
+
+#include <stdio.h>
+
+main(){
+    printf ("hello, world\n")
+}
+
+gives errors:
+
+hello-world-err.c: In function ‘main’:
+hello-world-err.c:22:30: error: expected ‘;’ before ‘}’ token
+   22 |     printf ("hello, world\n")
+      |                              ^
+      |                              ;
+   23 | }
+      | ~      

@@ -1,0 +1,7 @@
+gcc returns this warning the program runs perfectly tho and printed cm in nextline
+
+Excercise_1-2_wrong-escape-character.c:23:32: warning: unknown escape sequence: '\c'
+   23 |     printf("hello world \n\c\m");
+      |                                ^
+Excercise_1-2_wrong-escape-character.c:23:32: warning: unknown escape sequence: '\m'
+                                                                                      
