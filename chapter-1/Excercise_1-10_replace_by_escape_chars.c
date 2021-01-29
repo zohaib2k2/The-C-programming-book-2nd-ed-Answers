@@ -3,7 +3,8 @@
  *
  *       Filename:  Excercise_1-10_replace_by_escape_chars.c
  *    Description:  A program that replace newlines with '\n'
- *                  tabs with '\n'and backslash by \\
+ *                  tabs with '\n',backspace is '\b' and backslash by '\\'
+ *
  *        Version:  1.0
  *        Created:  01/28/2021 10:33:16 PM
  *       Compiler:  gcc
@@ -17,6 +18,10 @@ int main(){
     int c;
     int is_escape = 0;
     while((c=getchar()) != EOF){
+        if(c=='\n'){
+            is_escape = 1;
+            printf("\\n");
+        }
         if(c=='\b'){
             is_escape = 1;
             printf("\\b");
